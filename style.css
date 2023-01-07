@@ -1,0 +1,136 @@
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  width: 100vw;
+  position: fixed;
+  background-color: white;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+header h2 {
+  font-weight: 500;
+  color: #4e8aff;
+}
+
+header nav {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgb(240, 240, 240);
+  transform: translateX(100vw);
+  transition: transform 0.5s ease;
+}
+
+.showNav {
+  transform: translateX(0);
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header nav ul li {
+  margin-block: 0.6rem;
+  width: 100%;
+  text-align: center;
+  display: flex;
+}
+
+header nav ul li a {
+  width: 100%;
+  padding: 15px;
+}
+
+header button {
+  background: none;
+  width: 2.5rem;
+  cursor: pointer;
+}
+
+.forward-button {
+  margin-top: 1rem;
+  width: 100%;
+}
+
+.forward-button img {
+  width: 2rem;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+}
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.profile-img {
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  align-self: center;
+  margin-block: 2.5rem;
+}
+
+.contact-button {
+  margin-top: 1rem;
+  background-color: #4e8aff;
+  height: 3rem;
+  border-radius: 1.5rem;
+}
+
+.contact-section {
+  margin-block: 3.1rem;
+  width: 70%;
+}
+
+.contact-buttons-box {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-button {
+  background: none;
+  border: 1px solid rgb(228, 228, 228);
+  margin-block: 0.8rem;
+  padding-block: 0.5rem;
+
+  font-size: 1rem;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.social-image-box {
+  width: 45%;
+  text-align: end;
+  margin-right: 10px;
+}
+
+.social-text-box {
+  width: 55%;
+  text-align: start;
+  margin-left: 10px;
+}
+
+.social-button img {
+  width: 35px;
+}

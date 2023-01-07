@@ -1,0 +1,55 @@
+.font-16 {
+  font-size: 1rem;
+}
+
+.font-20 {
+  font-size: 1.25rem;
+}
+
+.font-25 {
+  font-size: 1.6rem;
+}
+
+.font-36 {
+  font-size: 2.25rem;
+}
+
+.font-48 {
+  font-size: 3rem;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-regular {
+  font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-blue {
+  color: #4e8aff;
+}
+
+.font-gray {
+  color: #4d4d4d;
+}
+
+.font-white {
+  color: white;
+}
+
+.mt-25 {
+  margin-top: 1.5rem;
+}
+
+.mt-45 {
+  margin-top: 2.8rem;
+}
+
+.text-left {
+  text-align: left;
+}

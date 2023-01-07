@@ -6,20 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Jandrey</title>
     <link href="./style.css" rel="stylesheet" />
+    <link href="./reset.css" rel="stylesheet" />
+    <link href="./text.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
-      Lucas Jandrey
-      <nav>
+      <h2>Lucas Jandrey</h2>
+
+      <nav id="nav" class="menu">
         <ul>
-          <li><a href="#">home</a></li>
-          <li><a href="#">contato</a></li>
-          <li><a href="#">projetos</a></li>
-          <li><a href="#">tecnologias</a></li>
+          <li>
+            <button class="forward-button" onclick="HideShowNav()">
+              <img style="background: none" src="./images/forward.svg" />
+            </button>
+          </li>
+          <li><a href="#home">home</a></li>
+          <li><a href="#contact">contato</a></li>
+          <li><a href="#projects">projetos</a></li>
+          <li><a href="#tec">tecnologias</a></li>
         </ul>
       </nav>
-      <div>a</div>
+
+      <div>
+        <button onclick="HideShowNav()">
+          <img style="background: none" src="./images/menu.svg" />
+        </button>
+        <button>
+          <img style="background: none" src="./images/moon.svg" />
+        </button>
+      </div>
     </header>
+
+    <main>
+      <section class="profile-section">
+        <img class="profile-img" src="./images/Lucas.jpg" />
+
+        <h1>
+          <span class="font-20">Olá, eu sou</span><br />
+          <span class="font-36 font-bold">Lucas Jandrey </span><br />
+          <span class="font-20">
+            E eu sou
+            <span class="font-blue">Desenvolvedor</span>
+          </span>
+        </h1>
+
+        <p class="font-20 font-gray mt-45">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
+          explicabo, asperiores enim eligendi nisi quae amet fugit quaerat
+          repudiandae est sit. Dolores asperiores porro nihil nisi quasi
+          deserunt omnis aliquam!
+        </p>
+        <button class="contact-button font-20 font-regular font-white">
+          Entre em contato!
+        </button>
+      </section>
+    </main>
+
+    <section class="contact-section">
+      <h3 class="font-16 font-gray">Redes para contato</h3>
+      <ul class="contact-buttons-box">
+        <button class="social-button">
+          <div class="social-image-box">
+            <img src="./images/github.svg" alt="github" />
+          </div>
+          <div class="social-text-box">
+            <span class="text-left">Github</span>
+          </div>
+        </button>
+
+        <button class="social-button">
+          <div class="social-image-box">
+            <img src="./images/linkedin.svg" alt="github" />
+          </div>
+          <div class="social-text-box">
+            <span class="text-left">Linkedin</span>
+          </div>
+        </button>
+
+        <button class="social-button">
+          <div class="social-image-box">
+            <img src="./images/instagram.svg" alt="github" />
+          </div>
+          <div class="social-text-box">
+            <span class="text-left">Instagram</span>
+          </div>
+        </button>
+
+        <button class="social-button">
+          <div class="social-image-box">
+            <img src="./images/email.svg" alt="github" />
+          </div>
+          <div class="social-text-box">
+            <span class="text-left">E-mail</span>
+          </div>
+        </button>
+      </ul>
+    </section>
+
     <script src="./index.js"></script>
   </body>
 </html>
