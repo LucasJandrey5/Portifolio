@@ -4,115 +4,221 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lucas Jandrey</title>
-    <link href="./style.css" rel="stylesheet" />
-    <link href="./reset.css" rel="stylesheet" />
-    <link href="./text.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      href="images/favicon.svg"
+      sizes="any"
+      type="image/svg+xml"
+    />
+
+    <title>Lucas Jandrey - Portifólio Desenvolvedor Front-end</title>
+    <meta
+      name="description"
+      content="Conheça o trabalho de um desenvolvedor Front-end Lucas Jandrey. Navegue pelo portfólio e veja projetos criativos e bem desenvolvidos que demonstram habilidades em HTML, CSS e JavaScript. Entre em contato para discutir como podemos trabalhar juntos para criar um site incrível."
+    />
+
+    <link href="./css/style.css" rel="stylesheet" />
+    <link href="./css/reset.css" rel="stylesheet" />
+    <link href="./css/text.css" rel="stylesheet" />
+    <link href="./css/responsivo.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+
+    <!-- Início Meta tag Facebook -->
+    <meta
+      property="”og:site_name”"
+      content="Lucas Jandrey - Portifolio Desenvolvedor Front-end"
+    />
+    <meta
+      http-equiv="og:title"
+      content="Lucas Jandrey - Portifolio Desenvolvedor Front-end"
+    />
+    <meta
+      name="og:description"
+      content="Conheça o trabalho de um desenvolvedor Front-end Lucas Jandrey. Navegue pelo portfólio e veja projetos criativos e bem desenvolvidos que demonstram habilidades em HTML, CSS e JavaScript. Entre em contato para discutir como podemos trabalhar juntos para criar um site incrível."
+    />
+    <meta property=”og:url” content=” https://lucasjandrey.com”/>
+    <!-- Fim Meta tag Facebook -->
+
+    <!-- Início Meta tag Twitter -->
+    <meta
+      name="twitter:title"
+      content="Lucas Jandrey - Portifolio Desenvolvedor Front-end"
+    />
+    <meta
+      name="twitter:description"
+      content="Conheça o trabalho de um desenvolvedor Front-end. Navegue pelo portfólio e veja projetos criativos e bem desenvolvidos que demonstram habilidades em HTML, CSS e JavaScript. Entre em contato para discutir como podemos trabalhar juntos para criar um site incrível."
+    />
+    <meta name="twitter:url" content="" />
+    <meta name="twitter:card" content="summary" />
+    <!-- Fim Meta tag Twitter -->
+
+    <!-- Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HHYPB3PV07"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-HHYPB3PV07");
+    </script>
+    <!-- End Google Analytics -->
   </head>
-  <body>
+  <body id="home">
     <header>
       <h2>Lucas Jandrey</h2>
 
       <nav id="nav" class="menu">
         <ul>
-          <li>
+          <li class="hide-670">
             <button class="forward-button" onclick="HideShowNav()">
-              <img style="background: none" src="./images/forward.svg" />
+              <img src="./images/forward.svg" alt="Close menu button" />
             </button>
           </li>
-          <li><a href="#home">home</a></li>
-          <li><a href="#contact">contato</a></li>
-          <li><a href="#projects">projetos</a></li>
-          <li><a href="#tec">tecnologias</a></li>
+
+          <li><a onclick="HideShowNav()" href="#home">home</a></li>
+          <li>
+            <a onclick="HideShowNav()" id="nav-link" href="#contact">
+              contato
+            </a>
+          </li>
+          <li>
+            <a onclick="HideShowNav()" id="nav-link" href="#projects">
+              projetos
+            </a>
+          </li>
+          <li>
+            <a onclick="HideShowNav()" id="nav-link" href="#technologies">
+              tecnologias
+            </a>
+          </li>
         </ul>
       </nav>
 
       <div>
-        <button onclick="HideShowNav()">
-          <img style="background: none" src="./images/menu.svg" />
+        <button onclick="HideShowNav()" class="hide-670">
+          <img src="./images/menu.svg" alt="menu button" />
         </button>
         <button>
-          <img style="background: none" src="./images/moon.svg" />
+          <img
+            onclick="DarkMode()"
+            src="./images/moon.svg"
+            alt="dark mode button"
+          />
         </button>
       </div>
     </header>
 
     <main>
       <section class="profile-section">
-        <img class="profile-img" src="./images/Lucas.jpg" />
+        <div>
+          <img src="./images/Lucas.jpg" alt="profile-photo" />
 
-        <h1>
-          <span class="font-20">Olá, eu sou</span><br />
-          <span class="font-36 font-bold">Lucas Jandrey </span><br />
-          <span class="font-20">
-            E eu sou
-            <span class="font-blue">Desenvolvedor</span>
-          </span>
-        </h1>
+          <h1 class="apresentation">
+            <span class="font-20">Olá, eu sou</span><br />
+            <span class="font-36 font-bold">Lucas Jandrey </span><br />
+            <span class="font-20">
+              E eu sou
+              <span class="font-blue">Desenvolvedor Front-end </span>
+            </span>
+          </h1>
+        </div>
 
-        <p class="font-20 font-gray mt-45">
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio
-          explicabo, asperiores enim eligendi nisi quae amet fugit quaerat
-          repudiandae est sit. Dolores asperiores porro nihil nisi quasi
-          deserunt omnis aliquam!
-        </p>
-        <button class="contact-button font-20 font-regular font-white">
-          Entre em contato!
-        </button>
+        <div>
+          <p class="font-20 font-gray mt-45">
+            Tenho experiência em desenvolvimento de aplicações web, criação de
+            layouts e implementação de interações com o usuário. Estou sempre
+            buscando aprender e me atualizar para oferecer aos meus clientes
+            soluções de qualidade.
+          </p>
+          <a
+            href="#contact"
+            class="contact-button font-20 font-regular font-white"
+          >
+            Entre em contato!
+          </a>
+        </div>
       </section>
     </main>
 
     <section class="contact-section">
+      <a class="anchor" id="contact"></a>
       <h3 class="font-16 font-gray">Redes para contato</h3>
       <ul class="contact-buttons-box">
-        <button class="social-button">
+        <a
+          href="https://github.com/LucasJandrey5"
+          target="_blank"
+          rel="noopener"
+          class="social-button"
+        >
           <div class="social-image-box">
             <img src="./images/github.svg" alt="github" />
           </div>
           <div class="social-text-box">
             <span class="text-left">Github</span>
           </div>
-        </button>
+        </a>
 
-        <button class="social-button">
+        <a
+          href="https://www.linkedin.com/in/lucas-jandrey/"
+          target="_blank"
+          rel="noopener"
+          class="social-button"
+        >
           <div class="social-image-box">
-            <img src="./images/linkedin.svg" alt="github" />
+            <img src="./images/linkedin.svg" alt="linkedin" />
           </div>
           <div class="social-text-box">
             <span class="text-left">Linkedin</span>
           </div>
-        </button>
+        </a>
 
-        <button class="social-button">
+        <a
+          href="https://www.instagram.com/lucas_jandrey_/"
+          target="_blank"
+          rel="noopener"
+          class="social-button"
+        >
           <div class="social-image-box">
-            <img src="./images/instagram.svg" alt="github" />
+            <img src="./images/instagram.svg" alt="Instagram" />
           </div>
           <div class="social-text-box">
             <span class="text-left">Instagram</span>
           </div>
-        </button>
+        </a>
 
-        <button class="social-button">
+        <a
+          href="https://wa.me/5549999499254"
+          target="_blank"
+          rel="noopener"
+          class="social-button"
+        >
           <div class="social-image-box">
-            <img src="./images/email.svg" alt="github" />
+            <img src="./images/whatsapp.svg" alt="whatsapp" />
           </div>
           <div class="social-text-box">
-            <span class="text-left">E-mail</span>
+            <span class="text-left">Whatsapp</span>
           </div>
-        </button>
+        </a>
       </ul>
     </section>
 
+    <hr />
+
     <section class="projects-section">
+      <a class="anchor" id="projects"></a>
       <h3 class="font-semibold font-24">Meus projetos</h3>
       <div class="project-box">
-        <img src="./images/Weather.png" alt="" />
+        <img src="./images/Weather.png" alt="print do projeto weather app " />
         <div class="project-text-box">
           <h4 class="font-32 font-bold font-blue">Weather App</h4>
           <div class="project-tec-box">
@@ -124,25 +230,90 @@
           </div>
 
           <p class="font-16 font-gray font-regular">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam
-            unde deserunt deleniti? Id, dolorum facere facilis adipisci eaque
-            perspiciatis? Cum tempora, necessitatibus quam iure
+            Desenvolvi um projeto pessoal de treinamento usando React, Axios e
+            Tailwind. A aplicação consome uma API pública e apresenta dados
+            dinâmicos, com requisições assíncronas feitas através do Axios.
+            Utilizei o Tailwind para construir uma interface limpa e fácil de
+            usar com uma aparência moderna. O projeto me permitiu praticar
+            minhas habilidades em React e me familiarizar com novas ferramentas
+            Front-end.
           </p>
           <div class="project-link-box">
-            <a href=""><img src="./images/github.svg" alt="" /></a>
+            <a
+              href="https://github.com/LucasJandrey5/WeatherSite"
+              target="_blank"
+              rel="noopener"
+              ><img src="./images/github.svg" alt="icone github"
+            /></a>
+            <!-- <a href="#" rel="noopener" class="underline"
+              >Clique aqui para acessar</a
+            > -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr />
+
+    <section id="technologies" class="technologies-section">
+      <div class="technologies-box">
+        <h4 class="font-semibold font-24">Técnologias</h4>
+        <div class="technologies-row">
+          <div class="technology-item">
+            <img src="./images/ReactJs.png" alt="ReactJs" />
+            <p>ReactJs</p>
+          </div>
+          <div class="technology-item">
+            <img src="./images/Tailwind.jpg" alt="Tailwind" />
+            <p>Tailwind</p>
+          </div>
+        </div>
+
+        <div class="technologies-row">
+          <div class="technology-item">
+            <img src="./images/html.png" alt="HTML" />
+            <p>HTML</p>
+          </div>
+          <div class="technology-item">
+            <img src="./images/javascript.png" alt="Javascript" />
+            <p>Javascript</p>
+          </div>
+
+          <div class="technology-item">
+            <img src="./images/css.png" alt="CSS" />
+            <p>CSS</p>
           </div>
         </div>
       </div>
     </section>
 
     <section class="contact-section">
-      <h3>Quer que trabalhemos juntos em um projeto?</h3>
+      <h3 class="font-20 font-semibold font-lightgray">
+        Quer que trabalhemos juntos em um projeto?
+      </h3>
 
-      <button class="contact-button font-20 font-regular font-white">
+      <a
+        href="#contact"
+        rel="noopener"
+        class="contact-button font-16 font-medium font-white"
+      >
         Envie uma mensagem
-      </button>
+      </a>
     </section>
 
+    <hr />
+
+    <span class="credits-box">
+      Dev with
+      <img src="./images/heart.svg" alt="love" />
+
+      by
+      <a href="https://github.com/LucasJandrey5" rel="noopener" target="_blank"
+        >Lucas Jandrey</a
+      >
+    </span>
+
+    <br /><br />
     <script src="./index.js"></script>
   </body>
 </html>

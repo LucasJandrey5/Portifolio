@@ -54,6 +54,10 @@
   color: #4e8aff;
 }
 
+.font-lightgray {
+  color: #8f8f8f;
+}
+
 .font-gray {
   color: #4d4d4d;
 }
@@ -72,4 +76,8 @@
 
 .text-left {
   text-align: left;
+}
+
+.underline {
+  text-decoration: underline;
 }
