@@ -17,12 +17,13 @@ hr {
 
 header {
   width: 100vw;
+
   position: fixed;
   background-color: #f5f5f5;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.29);
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 header h2 {
